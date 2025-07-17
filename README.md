@@ -1,8 +1,7 @@
 # SRAM Design Project
 
 **Authors:** Aishwarya Bommireddipalli, Albert DiCroce, Alexandra Wright, Stephen Singh  
-**Department of Electrical and Computer Engineering, University of Florida** :contentReference[oaicite:0]{index=0}
-
+**Department of Electrical and Computer Engineering, University of Florida** 
 ---
 
 ## Table of Contents
@@ -20,18 +19,17 @@
   - [Read and Write Operations](#read-and-write-operations)  
 - [Layout](#layout)  
 - [Conclusion](#conclusion)  
-- [References](#references)  
 - [Work Contributions](#work-contributions)  
 
 ---
 
 ## Abstract
 
-This project presents the design and implementation of a custom 8×4 Static Random Access Memory (SRAM) cell at the 45 nm technology node, including all supporting circuitry and full-chip layout. We discuss the transistor-level components, decoder logic, sense amplification, and read/write control, then validate functionality through transient simulations in Cadence ADE L. :contentReference[oaicite:1]{index=1}
+This project presents the design and implementation of a custom 8×4 Static Random Access Memory (SRAM) cell at the 45 nm technology node, including all supporting circuitry and full-chip layout. We discuss the transistor-level components, decoder logic, sense amplification, and read/write control, then validate functionality through transient simulations in Cadence ADE L. 
 
 ## Introduction
 
-SRAM is widely used for its low power consumption and fast access times in SoCs for smartphones, laptops, and other high-density applications. A standard 6-transistor (6T) cell stores one bit, accessed via row (word line) and column (bit line) decoders. This design explores an 8-row by 4-column array, detailing each subcircuit and verifying performance through simulation. :contentReference[oaicite:2]{index=2}
+SRAM is widely used for its low power consumption and fast access times in SoCs for smartphones, laptops, and other high-density applications. A standard 6-transistor (6T) cell stores one bit, accessed via row (word line) and column (bit line) decoders. This design explores an 8-row by 4-column array, detailing each subcircuit and verifying performance through simulation. 
 
 ## Design Components
 
@@ -62,8 +60,7 @@ SRAM is widely used for its low power consumption and fast access times in SoCs 
 
 - **Tool:** Cadence ADE L transient simulations.  
 - **Stimuli:** Pulsed read/write enables, address toggling, and clock drives.  
-- **Validation:** Individual blocks tested before full-array integration. :contentReference[oaicite:3]{index=3}
-
+- **Validation:** Individual blocks tested before full-array integration. 
 ### Pre-charge
 
 - **Bit Line Pre-charge:** Bit lines are driven to VDD prior to read to minimize delay.  
@@ -81,19 +78,17 @@ SRAM is widely used for its low power consumption and fast access times in SoCs 
 - **Hierarchy:**  
   - Bit-cell layouts verified with DRC/LVS.  
   - Decoders and sense amplifier laid out using standard cell methodology.  
-- **Metal Routing:** Power rails (VDD/VSS) on metal layers; bit lines on Metal-1; gates on polysilicon. :contentReference[oaicite:4]{index=4}
-
+- **Metal Routing:** Power rails (VDD/VSS) on metal layers; bit lines on Metal-1; gates on polysilicon.
+  
 ## Conclusion
 
 The 8×4 SRAM design demonstrates correct functionality and layout compliance at 45 nm. Future enhancements could include capacity scaling, frequency optimization, and additional sense-amplifier channels to accommodate larger arrays.
 
-## References
 
-1. J. IMP, “VLSI Memory,” University of New Mexico, 2022. :contentReference[oaicite:5]{index=5}
-
+   
 ## Work Contributions
 
 - **Aishwarya Bommireddipalli:** Schematic design, full-array verification.  
 - **Albert DiCroce:** Column decoder layout and reporting.  
 - **Alexandra Wright:** 8×4 SRAM layout integration.  
-- **Stephen Singh:** Bit-cell layout, DRC/LVS verification of sense amplifier, row decoder layout. :contentReference[oaicite:6]{index=6}  
+- **Stephen Singh:** Bit-cell layout, DRC/LVS verification of sense amplifier, row decoder layout. 
